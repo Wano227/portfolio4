@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pascal Opara — Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- ================= NAVIGATION ================= -->
+  <header>
+    <nav>
+      <div class="logo">PASCAL OPARA.</div>
+
+      <!-- Theme toggle (desktop) -->
+      <button id="theme-toggle" aria-label="Toggle theme" title="Toggle theme">🌓</button>
+
+      <!-- Hamburger -->
+      <div class="hamburger" id="menu-toggle" aria-label="Toggle menu" title="Menu">☰</div>
+
+      <ul id="nav-links" class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section id="home" class="hero scroll-animate">
+    <div class="hero-text">
+      <h1>My name is <span>Pascal Opara</span></h1>
+      <p>I’m a <span class="animated-words" id="typing-text"></span></p>
+    </div>
+    <div class="hero-image">
+      <img src="images/myphoto.jpg" alt="Portrait of Pascal Opara" loading="eager">
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="about scroll-animate">
+    <div class="about-img">
+      <img src="images/myphoto2.jpg" alt="Pascal working" loading="lazy">
+    </div>
+    <div class="about-text">
+      <h2>Hello</h2>
+      <p>
+        Hi, I’m <strong>Pascal Opara</strong> — A student of the Pan Atlantic University. I'm a passionate creative who loves bringing ideas to life through design and technology.
+        From <em>UI/UX design</em> to <em>photography, videography</em>, and <em>app development</em>, I enjoy building things that tell stories and solve problems.
+      </p>
+      <p>
+        When I’m not working on projects, I’m learning new tools, exploring fresh ideas, and pushing myself to grow.
+        My goal is simple: create work that’s clean, meaningful, and impactful.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= WORKS ================= -->
+  <section id="works" class="works">
+    <h2 class="scroll-animate">My Work</h2>
+
+    <!-- Toolbar: search + filters -->
+    <div class="toolbar scroll-animate">
+      <input id="search-input" type="search" placeholder="Search projects by title…" aria-label="Search projects"/>
+      <div class="filter">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="ui">UI Design</button>
+        <button data-filter="videography">Videography</button>
+        <button data-filter="apps">App Development</button>
+        <button data-filter="photography">Photography</button>
+      </div>
+    </div>
+
+    <div class="gallery scroll-animate">
+      <!-- UI DESIGN -->
+      <div class="item ui" data-title="Suftan" data-desc="A mock up of an ordering app I am creating for my father's company." data-img="images/ui1.jpg">
+        <img src="images/ui1.jpg" alt="UI design mockup Suftan" loading="lazy">
+      </div>
+
+      <!-- VIDEOGRAPHY (uses data-watch for external link) -->
+      <div class="item videography video" 
+           data-title="Art Club"
+           data-desc="A cinematic video made for the art club to bring freshers to the club."
+           data-video="videos/video1.mp4"
+           data-watch="">
+        <img src="images/video1-thumbnail.jpg" alt="Art Club video thumbnail" loading="lazy">
+      </div>
+
+      <div class="item videography video" 
+           data-title="James Hope College"
+           data-desc="A video I made and edited for the Pan Atlantic University to present to the James Hope College students."
+           data-video="videos/video2.mp4"
+           data-watch="https://drive.google.com/file/d/1Np4X1PDV_Og-ySDScE6Vv1oUkTPwMiNL/view?usp=drive_link">
+        <img src="images/video2-thumbnail.jpg" alt="James Hope College video thumbnail" loading="lazy">
+      </div>
+
+      <div class="item videography video" 
+           data-title="Eco-Alchemy"
+           data-desc="A short video I made of the Living Green club members talking about their Eco-Alchemy project."
+           data-video="videos/video3.mp4"
+           data-watch="https://drive.google.com/file/d/1fgnSRJiclxs9mIdWqZBYmtHhqJud7Jp2/view?usp=drive_link">
+        <img src="images/video3-thumbnail.jpg" alt="Eco-Alchemy video thumbnail" loading="lazy">
+      </div>
+
+      <!-- APP DEVELOPMENT -->
+      <div class="item apps" data-title="Suftan App (WIP)" data-desc="The look of the app so far — currently in development." data-img="images/app1.jpg">
+        <img src="images/app1.jpg" alt="Mobile app screens" loading="lazy">
+      </div>
+
+      <!-- PHOTOGRAPHY -->
+      <div class="item photography"  data-img="images/photo1.jpg">
+        <img src="images/photo1.jpg" alt="Mountain landscape" loading="lazy">
+      </div>
+      <div class="item photography"  data-img="images/photo2.jpg">
+        <img src="images/photo2.jpg" alt="City skyline" loading="lazy">
+      </div>
+      <div class="item photography"  data-img="images/photo3.jpg">
+        <img src="images/photo3.jpg" alt="City architecture" loading="lazy">
+      </div>
+      <div class="item photography"  data-img="images/photo4.jpg">
+        <img src="images/photo4.jpg" alt="Street photography" loading="lazy">
+      </div>
+      <div class="item photography"  data-img="images/photo5.jpg">
+        <img src="images/photo5.jpg" alt="Portrait" loading="lazy">
+      </div>
+      <div class="item photography"  data-img="images/photo6.jpg">
+        <img src="images/photo6.jpg" alt="Portrait" loading="lazy">
+      </div>
+      <div class="item photography"  data-img="images/photo7.jpg">
+        <img src="images/photo7.jpg" alt="Night photography lights" loading="lazy">
+      </div>
+      <div class="item photography"  data-img="images/photo8.jpg">
+        <img src="images/photo8.jpg" alt="Nature close-up" loading="lazy">
+      </div>
+      <div class="item photography"  data-img="images/photo9.jpg">
+        <img src="images/photo9.jpg" alt="Nature scene" loading="lazy">
+      </div>
+      <div class="item photography"  data-img="images/photo10.jpg">
+        <img src="images/photo10.jpg" alt="Shadow art" loading="lazy">
+      </div>
+      <div class="item photography"  data-img="images/photo11.jpg">
+        <img src="images/photo11.jpg" alt="Pattern shot" loading="lazy">
+      </div>
+      <div class="item photography"  data-img="images/photo12.jpg">
+        <img src="images/photo12.jpg" alt="Lifestyle photo" loading="lazy">
+      </div>
+      <div class="item photography"  data-img="images/photo13.jpg">
+        <img src="images/photo13.jpg" alt="Landscape scene" loading="lazy">
+      </div>
+    </div>
+
+    <button id="load-more" class="load-more">Load More</button>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="contact scroll-animate">
+    <h2>Contact Me</h2>
+    <p>Phone: <a href="tel:08036100715">08036100715</a></p>
+    <p>Email: <a href="mailto:pascalpara243@gmail.com">pascalpara243@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/pascal-opara-688a36294/" target="_blank" rel="noopener">Pascal Opara</a></p>
+    <p>X: Itsjustkamso</p>
+  </section>
+
+  <!-- ================= MODAL POPUP ================= -->
+  <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+    <span class="close" aria-label="Close modal">&times;</span>
+    <div class="modal-content">
+      <h2 id="modal-title"></h2>
+      <div id="modal-media"></div>
+      <p id="modal-desc"></p>
+      <div class="modal-nav">
+        <button id="prev-btn" class="ghost">⬅ Previous</button>
+        <button id="next-btn" class="primary">Next ➡</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to top -->
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Pascal Opara. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
