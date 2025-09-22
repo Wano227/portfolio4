@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // ====== TYPING EFFECT (hero) ======
-  const roles = ["UI Designer", "Videographer", "Photographer", "Web Developer"];
+  const roles = ["UI Designer", "Videographer", "Photographer", "Web Developer","Video Editor","Graphic Designer"];
   let roleIndex = 0;
   let charIndex = 0;
   const typingSpeed = 120, erasingSpeed = 60, delayBetweenRoles = 1200;
